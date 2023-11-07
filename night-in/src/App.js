@@ -1,10 +1,10 @@
-import './App.css';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          NightIn
+    <div className="main">
+      <header className="main-header">
+          NightIn.
       </header>
     </div>
   );
