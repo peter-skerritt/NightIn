@@ -1,8 +1,11 @@
-body {
-  margin: 0;
-  background-color: rgb(41, 64, 77);
+html, body {
+  margin-top: 0%;
+  background-color: white;
   font-family: 'DM Serif Display', serif;
-  overflow: hidden;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #bg-video {
@@ -26,8 +29,8 @@ body {
 .homepage {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 1.1fr 0.6fr 2.2fr;
-  gap: 0px 0px;
+  grid-template-rows: 0.1fr 75vh 0.6fr 2.2fr;
+  gap: 0px 15px;
   grid-template-areas:
     "navbar navbar navbar"
     "title title title"
@@ -42,7 +45,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
+  gap: 0px 70px;
   grid-auto-flow: row;
   grid-template-areas:
     "brand-match . navbuttons"
@@ -58,7 +61,7 @@ body {
   font-size: 45pt;
   margin: 0;
   text-decoration: underline;
-  text-align: left; /* Align the text to the left */
+  text-align: left;
 }
 
 .brand-match {
@@ -133,12 +136,34 @@ body {
   align-items: center;
   color: aliceblue;
   font-size: 50pt;
-  padding: 10px; /* Add some padding for spacing */
+  padding: 10px;
+  background-color: rgb(41, 64, 77);
+  height: 100%;
 }
 
 .underline {
   text-decoration: underline;
 }
+
+  .button-container {
+    display: flex;
+    justify-content: space-evenly; /* Evenly distribute space between the buttons */
+    align-items: center; /* Center the buttons vertically */
+    width: 100%;
+  }
+
+  .side-button {
+    border-radius: 50%; /* Make the button round */
+    width: 40px; /* Set a fixed width for the side buttons */
+    height: 40px; /* Set a fixed height for the side buttons */
+    padding: 100px;
+    background-color: #fbeee0;
+    border: 12px solid #0a241c;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    
+  }
 
 .match-button {
   background-color: #fbeee0;
@@ -185,14 +210,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 20px; 
   color: antiquewhite;
   font-size: 20pt;
+  background-color: rgb(41, 64, 77);
+  margin-top: 10px;
+  gap: 10px 20px;
 }
-
-
-
-/* scripts stuff */
 
 .HorrorFont {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -215,11 +238,12 @@ body {
 }
 
 .ActionFont {
-  font-family: 'Kenia', sans-serif;;
+  font-family: 'Kenia', sans-serif;
 }
 
 .RomanceFont {
   font-family: 'Cedarville Cursive', cursive;
+  font-size: 45pt;
 }
 
 .DramaFont {
@@ -237,4 +261,3 @@ body {
 .MusicalFont {
   font-family: 'ComedyFont', sans-serif;
 }
-
