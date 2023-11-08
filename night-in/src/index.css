@@ -1,8 +1,8 @@
 body {
-  margin: 0%;
+  margin: 0;
   background-color: rgb(41, 64, 77);
   font-family: 'DM Serif Display', serif;
-
+  overflow: hidden;
 }
 
 #bg-video {
@@ -11,37 +11,35 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Maintain video aspect ratio and cover the viewport */
-  z-index: -1; /* Place it behind other content */
+  object-fit: cover;
+  z-index: -1;
 }
 
-/* Style the content container */
 .content {
   position: relative;
-  z-index: 1; /* Place it above the video */
-  text-align: center; /* Center the content */
-  color: white; /* Text color on top of the video */
-  padding: 20px; /* Add some padding to the content */
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
 .homepage {
-  display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-auto-rows: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 0.1fr 1.1fr 0.6fr 2.2fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1.1fr 0.6fr 2.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
     "navbar navbar navbar"
     "title title title"
     ". match-button ."
-    "how-to how-to how-to"; 
-  justify-items: stretch; 
-  width: 100%; 
-  height: 100%; 
+    "how-to how-to how-to";
+  justify-items: stretch;
+  width: 100%;
+  height: 100%;
 }
 
-.navbar {  display: grid;
+.navbar {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -53,17 +51,17 @@ body {
   grid-area: navbar;
   background-color: #fbeee0;
   border: solid 4px;
-  border-color: black ;
+  border-color: black;
 }
 
 .navtitle {
   font-size: 45pt;
-  margin: 0%;
+  margin: 0;
   text-decoration: underline;
 }
 
-
-.brand-match {  display: grid;
+.brand-match {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -81,14 +79,8 @@ body {
 .navbuttons {
   grid-area: navbuttons;
   display: flex;
-  justify-content: space-evenly
-}
-
-.navbuttons {
-  grid-area: navbuttons;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .navbuttons button {
@@ -109,17 +101,21 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   font-family: 'DM Serif Display', serif;
-  margin-right: 10px; /* Add 10px of right margin for spacing */
+  margin-right: 10px;
 }
 
 .navbuttons button:last-child {
-  margin-right: 0; /* Remove margin from the last button */
+  margin-right: 0;
 }
 
 .navbuttons button:hover {
   background-color: #ffffff;
 }
 
+.navbuttons button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
 
 @media (min-width: 768px) {
   .navbuttons {
@@ -128,18 +124,19 @@ body {
   }
 }
 
-
 .title {
   grid-area: title;
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: aliceblue;
-  padding-top: 10%;
   font-size: 32pt;
+  padding: 10px; /* Add some padding for spacing */
+}
 
-
+.underline {
+  text-decoration: underline;
 }
 
 .match-button {
@@ -161,7 +158,7 @@ body {
   touch-action: manipulation;
   justify-content: center;
   align-items: center;
-  margin: 10%;
+  margin: 10px;
   font-family: 'DM Serif Display', serif;
   font-size: 24pt;
 }
@@ -182,11 +179,10 @@ body {
   }
 }
 
-.how-to { 
+.how-to {
   grid-area: how-to;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 20%;
+  padding: 20px; 
 }
-
