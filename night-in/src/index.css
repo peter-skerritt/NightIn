@@ -58,6 +58,7 @@ body {
   font-size: 45pt;
   margin: 0;
   text-decoration: underline;
+  text-align: left; /* Align the text to the left */
 }
 
 .brand-match {
@@ -131,7 +132,7 @@ body {
   justify-content: center;
   align-items: center;
   color: aliceblue;
-  font-size: 32pt;
+  font-size: 50pt;
   padding: 10px; /* Add some padding for spacing */
 }
 
@@ -185,4 +186,55 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   padding: 20px; 
+  color: antiquewhite;
+  font-size: 20pt;
 }
+
+
+
+/* scripts stuff */
+
+.HorrorFont {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.SciFiFont {
+  font-family: 'Phudu', sans-serif;
+}
+
+.ComedyFont {
+  font-family: 'ComedyFont', sans-serif;
+}
+
+.ThrillerFont {
+  font-family: 'Edu TAS Beginner', cursive;
+}
+
+.WesternFont {
+  font-family: 'ComedyFont', sans-serif;
+}
+
+.ActionFont {
+  font-family: 'Kenia', sans-serif;;
+}
+
+.RomanceFont {
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+.DramaFont {
+  font-family: 'Cinzel', serif;
+}
+
+.MysteryFont {
+  font-family: 'ComedyFont', sans-serif;
+}
+
+.FantasyFont {
+  font-family: 'Grenze Gotisch', serif;
+}
+
+.MusicalFont {
+  font-family: 'ComedyFont', sans-serif;
+}
+

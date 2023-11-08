@@ -11,7 +11,6 @@ function cycleWords() {
     { text: "Mystery?", font: "MysteryFont" },
     { text: "Fantasy?", font: "FantasyFont" },
     { text: "Musical?", font: "MusicalFont" },
-    { text: "NightIn?", font: "NightInFont" }
   ];
 
   const cycleTextElement = document.getElementById("cycleText");
