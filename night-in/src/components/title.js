@@ -1,4 +1,5 @@
 import React from "react"
+import SideButton from "./matchButtons"
 
 function Title(){
     return(
@@ -8,11 +9,7 @@ function Title(){
         </h2>
         <div>
         <script src="./titleCycle.js"></script>
-        <div className="button-container">
-            <button className="side-button"></button>
-            <button className="match-button">Let's Match.</button>
-            <button className="side-button"></button>
-        </div>
+        <SideButton />
         </div>
     </div>
     )
