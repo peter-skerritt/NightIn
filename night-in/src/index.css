@@ -8,16 +8,6 @@ html, body {
   padding: 0;
 }
 
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
 .content {
   position: relative;
   z-index: 1;
@@ -30,7 +20,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 75vh 0.6fr 2.2fr;
-  gap: 0px 15px;
+  gap: 0px 0px;
   grid-template-areas:
     "navbar navbar navbar"
     "title title title"
@@ -143,6 +133,7 @@ html, body {
 
 .underline {
   text-decoration: underline;
+  color: antiquewhite;
 }
 
   .button-container {
@@ -154,15 +145,23 @@ html, body {
 
   .side-button {
     border-radius: 50%; /* Make the button round */
-    width: 40px; /* Set a fixed width for the side buttons */
-    height: 40px; /* Set a fixed height for the side buttons */
-    padding: 100px;
+    width: 100px; /* Set a fixed width for the side buttons */
+    height: 150px; /* Set a fixed height for the side buttons */
+    padding: 150px;
     background-color: #fbeee0;
     border: 12px solid #0a241c;
     box-shadow: #422800 4px 4px 0 0;
     color: #422800;
     cursor: pointer;
-    
+  }
+
+  .side-button:hover {
+    background-color: #fff;
+  }
+  
+  .side-button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
   }
 
 .match-button {
@@ -184,9 +183,9 @@ html, body {
   touch-action: manipulation;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 0px;
   font-family: 'DM Serif Display', serif;
-  font-size: 24pt;
+  font-size: 30pt;
 }
 
 .match-button:hover {
@@ -213,8 +212,6 @@ html, body {
   color: antiquewhite;
   font-size: 20pt;
   background-color: rgb(41, 64, 77);
-  margin-top: 10px;
-  gap: 10px 20px;
 }
 
 .HorrorFont {
