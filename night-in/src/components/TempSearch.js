@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import queryMovieById from '../api/moivedb';
+//import queryMovieById from '../api/moivedb';
 
 function TempSearch() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -9,7 +9,7 @@ function TempSearch() {
     }
 
     const handleSearch = (event) => {
-        queryMovieById(searchTerm);
+        //queryMovieById(searchTerm);
     }
 
     return(
