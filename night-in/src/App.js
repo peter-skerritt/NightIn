@@ -19,7 +19,7 @@ function App() {
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, sndae, beatae maiores praesentium</p>
         </div>
         <div className="step-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisiciandae, beatae maiores praeasdasa</p>
+          <p>Lorem ipum dolor sit amet, consectetur adipisiciandae, beatae maiores praeasdasa</p>
         </div>
       </div> 
     </div>
