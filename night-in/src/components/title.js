@@ -1,5 +1,5 @@
-import React from "react"
-import SideButton from "./matchButtons"
+import React from "react";
+import SideButton from "./matchButtons";
 
 function Title(){
     return(
