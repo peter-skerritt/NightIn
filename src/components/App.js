@@ -1,6 +1,6 @@
 import React from 'react';
 //import './App.css'; // You may need to adjust the import based on your project structure and styling preferences
-import Navbar from './components/navbar';
+import Navbar from './navbar';
 import Title from './components/title';
 import TempSearch from './components/TempSearch'; //temporary just for api testing remove at later date
 
