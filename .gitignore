@@ -24,3 +24,4 @@ yarn-error.log*
 
 # imported from other .gitignore
 night-in/src/api/apiKeys.conf     
+node_modules
