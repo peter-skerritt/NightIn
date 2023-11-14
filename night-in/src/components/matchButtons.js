@@ -5,8 +5,8 @@ function SideButton(){
     return(
     <div className="button-container">
             <button className="side-button"></button>
-            <button className="match-button">Let's Match.</button>
-            <button className="side-button"></button>
+            <button className="match-button">let's watch.</button>
+
         </div>
 )}
 
