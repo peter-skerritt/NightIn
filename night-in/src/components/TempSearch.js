@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import getMovieList from '../api/moviedb';
+import getMovieList from '../api/getMovieLIst';
 
 function TempSearch() {
     const [searchTerm, setSearchTerm] = useState('');
