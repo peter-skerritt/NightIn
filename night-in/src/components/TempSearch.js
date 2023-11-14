@@ -9,7 +9,7 @@ function TempSearch() {
     }
 
     const handleSearch = (event) => {
-        getMovieList(5);
+        getMovieList();
     }
 
     return(
