@@ -29,8 +29,7 @@ async function getMovieList(){
         const response = await axios.get(discoverMoviesUrl, {
             params:{
                 api_key:api_key,
-                sort_by:'date.desc',
-                page: page
+                sort_by:'date.desc'
             },
         });
 
@@ -41,6 +40,13 @@ async function getMovieList(){
         console.log('Error getting movies', error)
     }
 }
+
+
+// async function getMovieListPagenated(){
+//     const pages=
+// }
+
+
 // async function queryMovieByID(movieId){
 // //make a request using the user ID
 // const request_token = getRequestTokenFromTMDB()
