@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import queryMovieById from '../api/moviedb';
+import getMovieList from '../api/moviedb';
 
 function TempSearch() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -9,7 +9,7 @@ function TempSearch() {
     }
 
     const handleSearch = (event) => {
-        queryMovieById(searchTerm);
+        getMovieList();
     }
 
     return(
