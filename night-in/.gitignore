@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+night-in/src/api/apiKeys.conf
+night-in/src/api/apikey.js

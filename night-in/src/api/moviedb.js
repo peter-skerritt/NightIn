@@ -42,29 +42,4 @@ async function getMovieList(){
 }
 
 
-// async function getMovieListPagenated(){
-//     const pages=
-// }
-
-
-// async function queryMovieByID(movieId){
-// //make a request using the user ID
-// const request_token = getRequestTokenFromTMDB()
-// await axios
-//     .get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${request_token}&language=en-US`)
-
-//     .then(function (response) {
-//         // handle success
-//         console.log(response)
-//         return(response);
-//     })
-// ;        //handle error
-//         console.log(error);
-//         return(error)
-//     });
-// }
-
-
-
-
 export default getMovieList()
