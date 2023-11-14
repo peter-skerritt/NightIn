@@ -1,26 +1,24 @@
 import axios from "axios";
-import apiKeys from './apiKeys.conf';
+
+import apiKeys from './apikey';
 
 
-function queryMovieByID(movieId){
+const api_key = apiKeys.key;
+const request_token_url = 'https://api.themoviedb.org/3/authentication/token/new';
 
-    
+async function getRequestTokenFromTMDB(){
+    try{
+        const response = await axios.get(request_token_url, {
+            params:{
+                api_key:api_key,
+            }
+        })
 
-axios.get(`https://api.themoviedb.org/3/movie${movieId}?${apiKeys.apiKey}`)
-    .then(function (response) {
-        // handle success
-        console.log(response)
-        return(response);
-    })
+        const request_token = response.data.request_token;
+        console.log('Token:', request_token);
 
-    .catch(function (error) {
-        //handle error
-        console.log(error);
-        return(error)
-    });
-}
-
-
+        }catch (error){
+            console.log('error getting request_token')
+        }}
 
 
-export default queryMovieByID();
