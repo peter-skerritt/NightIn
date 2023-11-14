@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import queryMovieById from '../api/moivedb';
+import queryMovieById from '../api/moviedb';
 
 function TempSearch() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -16,8 +16,9 @@ function TempSearch() {
         <div>
             <form onSubmit={handleSearch}>
                 <input type="text" value={searchTerm} onChange={handleChange}/>
-                <buttton type="submit">Search</buttton>
+                <button type="submit">Search</button>
             </form>
+            
         </div>
     )
 }
