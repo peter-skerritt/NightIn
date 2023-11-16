@@ -6,7 +6,7 @@ function SideButton(){
     return(
     <div className="button-container">
             <button className="side-button">
-                <p>+</p>
+                <p>Add Profile</p>
             </button>
             <button className="match-button">let's watch.</button>
 

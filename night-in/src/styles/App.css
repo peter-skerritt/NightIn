@@ -37,9 +37,3 @@ html, body {
     align-items: center; /* Center the buttons vertically */
     width: 100%;
   }
-
-
-
-TempSearch {
-  border: solid 20px red;
-}

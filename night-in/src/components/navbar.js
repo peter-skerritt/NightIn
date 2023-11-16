@@ -25,9 +25,8 @@ function Navbar() {
           <form>
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <button type="submit">Submit</button>
+            <button type="submit">Sign In</button>
           </form>
-          <button onClick={toggleSignup}>Close</button>
         </div>
       )}
     </div>

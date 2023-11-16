@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../styles/tempSearch.css'
 import getMovieList from '../api/getMovieLIst';
 
 function TempSearch() {
