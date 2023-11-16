@@ -20,9 +20,9 @@ function TempSearch() {
         type="text"
         value={searchTerm}
         onChange={handleChange}
-        placeholder="know what you want?"
+        placeholder=""
         />
-        <button type="submit">Search</button>
+        <button className="submit">Search</button>
         </form>
             
         </div>
@@ -30,3 +30,4 @@ function TempSearch() {
 }
 
 export default TempSearch
+
