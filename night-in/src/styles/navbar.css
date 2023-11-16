@@ -15,10 +15,8 @@
   }
 
   .navtitle {
-    font-size: 60pt;
-    margin: 0;
-    text-decoration: underline;
-    text-align: left;
+    font-size: 70pt;
+    font-weight: 800;
   }
   
   .brand-match {
