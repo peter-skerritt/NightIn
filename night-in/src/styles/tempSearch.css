@@ -1,0 +1,23 @@
+.temp-search {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .temp-search form {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-right: 20px; /* This creates a gap of 20px between the button and the search bar */
+  }
+  
+  .temp-search input {
+    flex: 1;
+    border: 1px solid #ccc;
+  }
+  
+  .temp-search button {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

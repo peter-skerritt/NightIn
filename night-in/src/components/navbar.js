@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../styles/navbar.css'; // Include your Navbar CSS file
+import TempSearch from "./TempSearch";
 
 function Navbar() {
   const [showSignup, setShowSignup] = useState(false);
@@ -18,6 +19,9 @@ function Navbar() {
         <a href="/auth/google" id="login-button" className="login-button">
           <button>Login</button>
         </a>
+        <div className="temp-search">
+        <TempSearch/>
+        </div>
       </div>
 
       {showSignup && (

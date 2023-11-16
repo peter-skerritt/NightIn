@@ -14,11 +14,16 @@ function TempSearch() {
     }
 
     return(
-        <div>
-            <form onSubmit={handleSearch}>
-                <input type="text" value={searchTerm} onChange={handleChange}/>
-                <button type="submit">Search</button>
-            </form>
+        <div className="temp-search">
+        <form onSubmit={handleSearch}>
+        <input
+        type="text"
+        value={searchTerm}
+        onChange={handleChange}
+        placeholder="know what you want?"
+        />
+        <button type="submit">Search</button>
+        </form>
             
         </div>
     )
