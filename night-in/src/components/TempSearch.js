@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
-//import getMovieList from '../api/getMovieLIst';
-//import getMovieInfo from "../api/getMovieInfo";
+import '../styles/tempSearch.css'
+import getMovieList from '../api/getMovieLIst';
 
 function TempSearch() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -28,11 +27,14 @@ function TempSearch() {
 
     return(
         <div>
-                <input type="text" value={searchTerm} onChange={handleChange} />
-                <button type="button" onClick={handleSearch}>Search</button>
+            <form onSubmit={handleSearch}>
+                <input type="text" value={searchTerm} onChange={handleChange}/>
+                <button type="submit">Search</button>
+            </form>
             
         </div>
     )
 }
 
 export default TempSearch
+

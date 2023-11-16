@@ -1,7 +1,6 @@
 import axios from "axios";
 import apiKeys from './apikey';
 
-
 const api_key = apiKeys.key;
 
 function getMovieList(){
