@@ -1,5 +1,6 @@
 import React from "react";
 import SideButton from "./matchButtons";
+import '../styles/title.css'
 
 function Title(){
     return(
