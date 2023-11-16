@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../styles/tempSearch.css'
 import getMovieList from '../api/getMovieLIst';
 
 function TempSearch() {
@@ -13,14 +14,20 @@ function TempSearch() {
     }
 
     return(
-        <div>
-            <form onSubmit={handleSearch}>
-                <input type="text" value={searchTerm} onChange={handleChange}/>
-                <button type="submit">Search</button>
-            </form>
+        <div className="temp-search">
+        <form onSubmit={handleSearch}>
+        <input
+        type="text"
+        value={searchTerm}
+        onChange={handleChange}
+        placeholder=""
+        />
+        <button className="submit">Search</button>
+        </form>
             
         </div>
     )
 }
 
 export default TempSearch
+
