@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import getMovieList from '../api/getMovieLIst';
-import getMovieById from "../api/getMovieById";
+import getMovieInfo from "../api/getMovieInfo";
 
 function TempSearch() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -11,7 +11,7 @@ function TempSearch() {
 
     const handleSearch = (event) => {
         getMovieList();
-        getMovieById(1161276)
+        getMovieInfo(16535);
         
     }
 

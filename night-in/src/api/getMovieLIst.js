@@ -1,11 +1,10 @@
 import axios from "axios";
 import apiKeys from './apikey';
-import getRequestTokenFromTMDB from './getRequestTokenFromTMDB';
+
 
 const api_key = apiKeys.key;
 
 async function getMovieList(){
-    const request_token = getRequestTokenFromTMDB();
     const discoverMoviesUrl = 'https://api.themoviedb.org/3/discover/movie';
     
     try{
